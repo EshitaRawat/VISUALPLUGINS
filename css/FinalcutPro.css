@@ -1,0 +1,261 @@
+/* card css start */
+h2{
+    font-weight:700;
+    color:#222;
+}
+
+/* Card */
+.card{
+    border: none;
+    border-radius:18px;
+    overflow:hidden;
+    transition:0.3s ease;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    background:#fff;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 30px rgba(0,0,0,.2);
+}
+
+/* Image */
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+/* Card Body */
+.card-body{
+    text-align:center;
+    padding:20px;
+}
+
+/* Title */
+.card-title{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+/* Description */
+.card-text{
+    color:#6c757d;
+    font-size:15px;
+    margin-bottom:20px;
+    text-align: left;
+}
+
+/* Button */
+.btn-primary{
+    background:#0088cc;
+    border:none;
+    border-radius:50px;
+    padding:10px 20px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn-primary:hover{
+    background:#006699;
+}
+
+/* Responsive */
+@media (max-width:768px){
+
+    .card img{
+        height:180px;
+    }
+
+    .card-title{
+        font-size:18px;
+    }
+
+    .card-text{
+        font-size:14px;
+    }
+
+}
+.card{
+    background:#111;
+    color:#fff;
+}
+
+.card-text{
+    color:#cfcfcf;
+}
+
+/* card css end */
+
+/* card button start */
+.btn-primary{
+    background:#229ED9;
+}
+
+.btn-primary:hover{
+    background:#1a85b8;
+}
+/* card button end */
+
+/* hover */
+
+/* ===========================
+          CARD
+=========================== */
+
+.card{
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 18px;
+    background: #fff;
+    transition: .4s ease;
+    box-shadow: 0 5px 18px rgba(0,0,0,.08);
+}
+
+/* Image */
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+/* Image Zoom */
+
+.card:hover img{
+    transform: scale(1.08);
+}
+
+/* Dark Overlay */
+
+.card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,.45), transparent);
+    opacity: 0;
+    transition: .4s;
+    z-index: 1;
+}
+
+.card:hover::before{
+    opacity: 1;
+}
+
+/* Card Lift */
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0,0,0,.20);
+}
+
+/* Content */
+
+.card-body{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-title{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card-text{
+    color: #6c757d;
+    margin: 15px 0;
+}
+
+/* Button */
+
+.btn-primary{
+    width: 100%;
+    background: #229ED9;
+    border: none;
+    border-radius: 50px;
+    padding: 12px;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.card:hover .btn-primary{
+    background: #1877F2;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .card img{
+        height: 190px;
+    }
+
+    .card-title{
+        font-size: 20px;
+    }
+
+}
+
+/*footer*/
+
+.footer{
+    background:#0d0d0d;
+    padding:70px 20px 30px;
+}
+
+.footer-logo{
+    color:#fff;
+    font-size:38px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.footer-text{
+    color:#bdbdbd;
+    max-width:550px;
+    margin:20px auto 35px;
+    font-size:17px;
+    line-height:28px;
+}
+
+.telegram-btn-footer{
+    display:inline-block;
+    text-decoration:none;
+    background:#229ED9;
+    color:#fff;
+    padding:14px 35px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.telegram-btn-footer:hover{
+    background:#1a85b8;
+    color:#fff;
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(34,158,217,.35);
+}
+
+.telegram-btn-footer i{
+    margin-right:8px;
+    font-size:20px;
+}
+
+.footer-line{
+    width:120px;
+    height:2px;
+    background:#229ED9;
+    margin:45px auto 20px;
+}
+
+.copyright{
+    color:#7d7d7d;
+    font-size:15px;
+}

@@ -1,0 +1,143 @@
+.card{
+    border-radius:18px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+.card-text{
+    text-align: left;
+    color: #6c757d;;
+}
+.card-title{
+    font-weight:700;
+}
+
+.btn-primary{
+    border-radius
+    :30px;
+}
+/* hover */
+/* Card */
+.card{
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 18px;
+    transition: .4s ease;
+    box-shadow: 0 5px 18px rgba(0,0,0,.08);
+}
+
+/* Image Zoom */
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.card:hover img{
+    transform: scale(1.08);
+}
+
+/* Dark Overlay */
+.card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,.45), rgba(0,0,0,0));
+    opacity: 0;
+    transition: .4s;
+    z-index: 1;
+}
+
+.card:hover::before{
+    opacity: 1;
+}
+
+/* Card Lift */
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0,0,0,.20);
+}
+
+/* Content above overlay */
+.card-body{
+    position: relative;
+    z-index: 2;
+}
+
+/* Button Animation */
+.btn-primary{
+    transition: .3s;
+}
+
+.card:hover .btn-primary{
+    background: #1877F2;
+    transform: scale(1.05);
+}
+
+/*footer*/
+
+.footer{
+    background:#0d0d0d;
+    padding:70px 20px 30px;
+}
+
+.footer-logo{
+    color:#fff;
+    font-size:38px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.footer-text{
+    color:#bdbdbd;
+    max-width:550px;
+    margin:20px auto 35px;
+    font-size:17px;
+    line-height:28px;
+}
+
+.telegram-btn-footer{
+    display:inline-block;
+    text-decoration:none;
+    background:#229ED9;
+    color:#fff;
+    padding:14px 35px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.telegram-btn-footer:hover{
+    background:#1a85b8;
+    color:#fff;
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(34,158,217,.35);
+}
+
+.telegram-btn-footer i{
+    margin-right:8px;
+    font-size:20px;
+}
+
+.footer-line{
+    width:120px;
+    height:2px;
+    background:#229ED9;
+    margin:45px auto 20px;
+}
+
+.copyright{
+    color:#7d7d7d;
+    font-size:15px;
+}

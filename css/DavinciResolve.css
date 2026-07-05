@@ -1,0 +1,221 @@
+/* ===========================
+        SECTION
+=========================== */
+
+body{
+    background:#f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container h2{
+    font-size:40px;
+    font-weight:700;
+    color:#222;
+}
+
+/* ===========================
+          CARD
+=========================== */
+
+.card{
+    border:none;
+    border-radius:18px;
+    overflow:hidden;
+    background:#fff;
+    transition:.4s;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+}
+
+/* ===========================
+        IMAGE
+=========================== */
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+/* ===========================
+       CARD BODY
+=========================== */
+
+.card-body{
+    text-align:center;
+    padding:22px;
+}
+
+.card-title{
+    font-size:22px;
+    font-weight:700;
+    color:#222;
+}
+
+.card-text{
+    color:#6c757d;
+    font-size:15px;
+    margin:15px 0 20px;
+    min-height:45px;
+    text-align: left;
+}
+
+/* ===========================
+       BUY BUTTON
+=========================== */
+
+.btn-primary{
+    width:100%;
+    background:#229ED9;
+    border:none;
+    border-radius:50px;
+    padding:12px;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    background:#1877F2;
+    transform:scale(1.03);
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media (max-width:992px){
+
+.container h2{
+    font-size:34px;
+}
+
+.card img{
+    height:200px;
+}
+
+}
+
+@media (max-width:768px){
+
+.container h2{
+    font-size:28px;
+}
+
+.card{
+    border-radius:15px;
+}
+
+.card img{
+    height:190px;
+}
+
+.card-title{
+    font-size:20px;
+}
+
+.btn-primary{
+    font-size:15px;
+}
+
+}
+
+@media (max-width:576px){
+
+.card img{
+    height:180px;
+}
+
+
+.container{
+    padding-left:18px;
+    padding-right:18px;
+}
+
+}
+
+/* hover */
+
+.card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top, rgba(0,0,0,.25), transparent);
+    opacity:0;
+    transition:.4s;
+}
+
+.card{
+    position:relative;
+}
+
+.card:hover::before{
+    opacity:1;
+}
+
+/*footer*/
+
+.footer{
+    background:#0d0d0d;
+    padding:70px 20px 30px;
+}
+
+.footer-logo{
+    color:#ffff;
+    font-size:38px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+.footer .footer-logo{
+    color:#fff !important;
+    font-size:38px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+.footer-text {
+    color:#bdbdbd;
+    max-width:550px;
+    margin:20px auto 35px;
+    font-size:17px;
+    line-height:28px;
+}
+
+.telegram-btn-footer{
+    display:inline-block;
+    text-decoration:none;
+    background:#229ED9;
+    color:#fff;
+    padding:14px 35px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.telegram-btn-footer:hover{
+    background:#1a85b8;
+    color:#fff;
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(34,158,217,.35);
+}
+
+.telegram-btn-footer i{
+    margin-right:8px;
+    font-size:20px;
+}
+
+.footer-line{
+    width:120px;
+    height:2px;
+    background:#229ED9;
+    margin:45px auto 20px;
+}
+
+.copyright{
+    color:#7d7d7d;
+    font-size:15px;
+}
