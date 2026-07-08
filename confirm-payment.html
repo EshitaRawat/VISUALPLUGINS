@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Confirm Payment | Visual Plugins</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body class="bg-light">
+
+<div class="container py-5">
+
+<div class="row justify-content-center">
+
+<div class="col-lg-7">
+
+<div class="card shadow border-0 rounded-4">
+
+<div class="card-body p-4">
+
+<h2 class="text-center mb-4">
+Payment Confirmation
+</h2>
+
+<p class="text-center text-muted">
+Fill the details below after completing the payment.
+</p>
+
+<form
+name="payment-confirmation"
+method="POST"
+data-netlify="true"
+netlify-honeypot="bot-field"
+action="/thankyou.html">
+
+<input type="hidden" name="form-name" value="payment-confirmation">
+
+<p class="d-none">
+<label>
+Don't fill this out:
+<input name="bot-field">
+</label>
+</p>
+
+<div class="mb-3">
+<label class="form-label">Product</label>
+<input
+type="text"
+id="productName"
+name="Product"
+class="form-control"
+readonly>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Full Name</label>
+<input
+type="text"
+name="Name"
+class="form-control"
+required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input
+type="email"
+name="Email"
+class="form-control"
+required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Telegram Username</label>
+<input
+type="text"
+name="Telegram"
+class="form-control"
+placeholder="@username">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Payment Method</label>
+
+<select
+name="Payment Method"
+class="form-select"
+required>
+
+<option value="">Select</option>
+
+<option>UPI</option>
+
+<option>USDT (TRC20)</option>
+
+<option>Bitcoin (BEP20)</option>
+
+</select>
+
+</div>
+
+<div class="mb-3">
+<label class="form-label">
+
+UTR / TxID
+
+</label>
+
+<input
+type="text"
+name="Transaction ID"
+class="form-control"
+required>
+
+</div>
+
+<button class="btn btn-primary w-100">
+
+Submit Payment
+
+</button>
+<p class="d-none">
+<label>
+Don't fill this out:
+<input name="bot-field">
+</label>
+</p>
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("productName").value =
+params.get("name") || "";
+
+</script>
+
+</body>
+</html>
